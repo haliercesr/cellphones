@@ -9,9 +9,31 @@ REQUISITOS
 🟢 El componente CreateCelular debe renderizarse en la ruta "/celulares/create".
 */
 
+//Commons imports
 import React from "react";
+import { Route,Routes } from "react-router-dom";
+//Components
+import Nav from './components/Nav/Nav';
+import Home from './components/Home/Home';
+import CelularDetail from './components/CelularDetail/CelularDetail';
+import CreateCelular from './components/CreateCelular/CreateCelular'
+import Navbottom from "./components/Nav-bottom/Navbottom";
+import Searchbar from "./components/SearchBar/searchbar";
 
 const App = () => {
-  return <div></div>;
+  return (
+     <div>
+          <Nav/>
+           <Routes>
+            <Route exact path='/' element={<Home/>}/>
+            <Route path="/celulares/:id" element={<CelularDetail/>}/>
+            <Route path="/celulares/create" element={<CreateCelular/>}/>
+            <Route path="/search/" element={<Searchbar/>}/>
+           </Routes>
+           <Navbottom/>
+
+  </div>
+  )
+
 };
 export default App;

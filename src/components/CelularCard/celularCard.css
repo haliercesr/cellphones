@@ -1,19 +1,48 @@
-.card img {
-  width: 26rem;
-  height: 26rem;
+.card-conteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 23%;
+  cursor: pointer;
+  box-shadow: 15px 12px 21px -18px #00000057;
+  -webkit-box-shadow: 15px 12px 21px -18px rgba(0,0,0,.34);
+  -moz-box-shadow: 15px 12px 21px -18px rgba(0,0,0,.34);
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
 }
 
-.card {
+.card-conteiner img {
+  width: 150px;
+  height: 175px;
+}
+
+.card-conteiner {
   position: relative;
 }
 
-.card p {
-  color: #fccc3d;
+.card-conteiner p {
+  font-family: Rajdhani-Bold;
+  color: #000000;
+}
+.card-conteiner h4{
+  font-size: 100%;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  color:#000000
 }
 
-.card button {
-  position: absolute;
-  left: 23.6rem;
+.card-conteiner button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  left: 13rem;
   top: 1rem;
   background: #e62143;
   border-radius: 11px;
@@ -39,4 +68,10 @@
   height: 2rem;
   word-break: break-word;
   border: 0;
+}
+
+.card-details{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

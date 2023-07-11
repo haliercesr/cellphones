@@ -1,0 +1,149 @@
+.SearchConteiner {
+    background-color: #e9edec;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+.Search-filter {
+    margin-top: 20px;
+    width: 20%;
+    color: black;
+    margin-left: 20px;
+
+
+}
+
+.search-cards-pagination{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.Search-cards-conteiner {
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dropdown-search {
+    display: inline-block;
+    position: relative
+}
+
+.dropdown-serch select{
+    border-color: #e9edec;
+    background-color: #e9edec;
+    border: 0px;
+    color:#424141;
+}
+
+.dropdown-content-search {
+    display: none;
+    position: absolute;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.95rem
+}
+
+.dropdown-content-search1 {
+    display: block;
+    position: absolute;
+    width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.95rem;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.dropdown-content-search1 a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content-search1 a:hover{
+    color: #ffffff;
+    background-color: rgb(208, 211, 213);
+  }
+
+.Search-filter-text2{
+ font-size: 0.95rem;
+ color: #424141;
+}
+
+.conteinercheckbox{
+    display: flex;
+    flex-direction: column;
+    color: #424141;
+}
+
+.circle-color-conteiner{
+display: flex;
+flex-wrap: wrap;
+width: 150px;
+}
+
+.circle-color-black{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px;
+}
+
+.circle-color-turquoise{
+    background-color: turquoise;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px
+}
+
+.circle-color-blue{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px
+}
+
+.circle-color-grey{
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px
+}
+
+.circle-color-skyblue{
+    background-color: skyblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px
+}
+
+.circle-color-pink{
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    border: 0px
+}

@@ -1,6 +1,7 @@
 /* 4️⃣ ***REDUCER*** 4️⃣ */
 
 /* Importa las action-types aquí. */
+import { GET_ALL_CELULARES,GET_CELULARES_DETAIL,CREATE_CELULAR,DELETE_CELULAR } from "../actions";
 
 const initialState = {
   celulares: [],
@@ -24,6 +25,28 @@ const rootReducer = (state = initialState, action) => {
     action.type
     //aca va tu codigo
   ) {
+    case GET_ALL_CELULARES:
+            return{
+              ...state,celulares:action.payload
+              
+            }
+    case GET_CELULARES_DETAIL:
+            return{
+              ...state, 
+              celularDetail:action.payload
+            }
+    case CREATE_CELULAR:
+            return {
+              ...state,
+              celulares:[...state.celulares,action.payload]
+            }
+    case DELETE_CELULAR:
+            return{
+              ...state,
+              celulares:state.celulares.filter((char)=>char.id!==action.payload)
+            }
+    default:
+            return {...state}
   }
 };
 
