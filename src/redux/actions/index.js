@@ -67,4 +67,4 @@ export const deleteCelular = (id) => {
         type: DELETE_CELULAR,
         payload: id
     }
-}
+ }
