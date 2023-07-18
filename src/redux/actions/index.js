@@ -18,7 +18,7 @@ export const DELETE_CELULAR = "DELETE_CELULAR"
 export const getAllCelulares = () => {  
         
        return async function (dispatch) {
-        let response = await axios.get(`http://localhost:3001/celulares`);
+        let response = await axios.get(`http://localhost:3003/celulares`);
         let action = {
             type:GET_ALL_CELULARES,
             payload: response.data
@@ -35,7 +35,7 @@ export const getAllCelulares = () => {
 export const getCelularDetails = (id) => {
         
         return async function (dispatch) {
-            let response = await axios.get(`http://localhost:3001/celulares/${id}`);
+            let response = await axios.get(`http://localhost:3003/celulares/${id}`);
             let action = {
                 type: GET_CELULARES_DETAIL,
                 payload: response.data
